@@ -44,8 +44,8 @@ class LITIV2018(Dataset):
         videos = ['vid04', 'vid07', 'vid08']
 
         for video in videos:
-            video_root = os.path.join(self.root, 'stcharles2018-v04', video)
-            rectified_root = os.path.join(self.root, 'stcharles2018-v04', 'rectified', video)
+            video_root = os.path.join(self.root, 'stcharles2018', video)
+            rectified_root = os.path.join(self.root, 'stcharles2018', 'rectified', video)
             rgb_images = os.path.join(rectified_root, 'rgb')
             lwir_images = os.path.join(rectified_root, 'lwir')
             rgb = [r for r in os.listdir(rgb_images)]
